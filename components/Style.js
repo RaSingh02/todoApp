@@ -7,7 +7,7 @@ export const light = StyleSheet.create({
     },
     tasksWrapper: {
       paddingHorizontal: 20,
-      paddingTop: 20,
+      paddingTop: 0,
     },
     sectionTitle: {
       fontSize: 24,
@@ -91,3 +91,26 @@ export const light = StyleSheet.create({
 });
 
 // TODO: Add dark theme
+
+export const lightButton = StyleSheet.create({
+  profileWrapper: {
+    flexDirection: 'row',
+    justifyContent: 'flex-end',
+    alignItems: 'center',
+    paddingHorizontal: 20,
+  },
+  profileButton: {
+    width: 40,
+    height: 40,
+    backgroundColor: '#f2f2f2',
+    borderRadius: 60,
+    justifyContent: 'center',
+    alignItems: 'center',
+    borderWidth: 1,
+    borderColor: '#c8c8c8',
+  },
+  profileIcon: {
+    color: '#55BCF6',
+    fontSize: 20,
+  },
+});

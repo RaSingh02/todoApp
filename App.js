@@ -10,6 +10,7 @@ import {
 } from 'react-native';
 import Task from './components/Task';
 import { light, dark } from './components/Style';
+import ProfileButton from './components/profileScreen';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { FontAwesomeIcon } from '@fortawesome/react-native-fontawesome';
 import { faTrash, faPlus } from '@fortawesome/free-solid-svg-icons/'
@@ -94,6 +95,10 @@ export default function App() {
         }}
         keyboardShouldPersistTaps='handled'
       >
+
+        {/* Profile Icon */}
+        <ProfileButton />
+
         {/* Default Screen */}
         {taskItems.length === 0 && completedTasks.length === 0 &&
           <View style={{flex: 1, justifyContent: 'center', alignItems: 'center', marginBottom: 25}}>
